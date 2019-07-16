@@ -140,17 +140,17 @@ def send_start(bot, update):
     #chat = update.effective_chat  # type: Optional[Chat] and unused variable
     PM_START = """
      Hello {}, my name is {}!\n
-    I know what itβs like to lose. To feel so desperately that youβre right, yet to fail nonetheless. Dread it. Run from it.\n
-    Destiny still arrives. Or should I say, I have.\n
+
+
     
-    I'm world manager bot maintained by [this awesome person](tg://user?id={}).
+I'm group manager bot maintained by [this noob person](tg://user?id={}).
     
     Click Help button to find out more about how to use me to my full potential.\n\n
-     Special Thanks to @Prakaska sar ??\n
-    My Souce Available Here [Source](https://github.com/shivamkchoudhary/HarukaAya)\n
     
-Want to add me to your group? [Click here!](t.me/ThaNos_TheBot?startgroup=true)
-Earth. That is my price.!
+    My Souce Available Here [Source](https://github.com/errorxdz/GuardianBot)\n
+    
+Want to add me to your group? [Click here!](t.me/guard_it_bot?startgroup=true)
+
 """
 
    
@@ -162,7 +162,7 @@ update.effective_message.reply_text(PM_START.format(escape_markdown(first_name),
 
 def control_panel(bot, update):
     LOGGER.info("Control panel")
-    chat = update.effective_chat
+    chat = update.effective_cha
     user = update.effective_user
 
     # ONLY send help in PM
